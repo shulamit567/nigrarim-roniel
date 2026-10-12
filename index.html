@@ -42,14 +42,14 @@ button,input,select,textarea{font:inherit;color:inherit}
 .top-actions{display:flex;gap:8px;flex-wrap:wrap}
 
 /* hero */
-.hero{background:var(--asphalt);color:#f4f4ef;border-radius:18px;overflow:hidden;position:relative;display:grid;grid-template-columns:1fr;}
+.hero{background-color:var(--asphalt);background-image:linear-gradient(180deg,rgba(16,19,22,.82) 0%,rgba(16,19,22,.55) 38%,rgba(16,19,22,.08) 72%,rgba(16,19,22,0) 100%),url(hero.jpg);background-size:cover;background-position:center 72%;background-repeat:no-repeat;color:#f4f4ef;border-radius:18px;overflow:hidden;position:relative;display:grid;grid-template-columns:1fr;}
 .hero-text{padding:28px 24px 0;display:grid;gap:10px}
-.hero h1{font-family:var(--f-display);font-weight:700;font-size:clamp(54px,9vw,104px);letter-spacing:.5px}
+.hero h1{text-shadow:0 2px 18px rgba(0,0,0,.45);font-family:var(--f-display);font-weight:700;font-size:clamp(54px,9vw,104px);letter-spacing:.5px}
 .hero h1 em{font-style:normal;color:var(--plate)}
-.hero p{margin:0;max-width:52ch;color:#c9ccce;font-size:18px}
+.hero p{margin:0;max-width:52ch;color:#e6e8e9;font-size:18px;text-shadow:0 1px 10px rgba(0,0,0,.6)}
 .hero-cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:6px}
 .hero .btn-ghost{color:#f4f4ef;border-color:#5a6066}
-.scene{width:100%;height:auto;display:block;margin-top:8px}
+.scene{width:100%;height:auto;display:block;margin-top:56px}
 .veh{animation:drive 2.8s cubic-bezier(.2,.7,.25,1) both}
 .wheel{transform-box:fill-box;transform-origin:center;animation:spin .45s linear 6}
 .dash{animation:road 2.8s cubic-bezier(.2,.7,.25,1) both}
@@ -174,9 +174,8 @@ fieldset .full{grid-column:1/-1}
       </div>
     </div>
     <svg class="scene" viewBox="0 0 900 230" role="img" aria-label="רכב גורר נגרר">
-      <rect x="0" y="198" width="900" height="32" fill="#1b1f23"></rect>
-      <g class="dash" fill="#f3c623"><rect x="0" y="212" width="60" height="5"></rect><rect x="120" y="212" width="60" height="5"></rect><rect x="240" y="212" width="60" height="5"></rect><rect x="360" y="212" width="60" height="5"></rect><rect x="480" y="212" width="60" height="5"></rect><rect x="600" y="212" width="60" height="5"></rect><rect x="720" y="212" width="60" height="5"></rect><rect x="840" y="212" width="60" height="5"></rect><rect x="960" y="212" width="60" height="5"></rect><rect x="1080" y="212" width="60" height="5"></rect></g>
-      <g transform="translate(250 0)"><g class="veh">
+      <g transform="translate(150 0)"><g class="veh">
+        <ellipse cx="340" cy="202" rx="250" ry="8" fill="#000" opacity=".3"></ellipse>
         <circle class="dust" cx="600" cy="190" r="16" fill="#8d8f86"></circle>
         <circle class="dust" cx="625" cy="182" r="11" fill="#8d8f86" style="animation-delay:.2s"></circle>
         <!-- trailer -->
